@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowDown, Download, ShieldCheck, Check } from 'lucide-react';
+import { ArrowDown, Download, Check } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 export const Hero: React.FC = () => {
@@ -42,9 +42,21 @@ export const Hero: React.FC = () => {
       />
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           
-          {/* Main Hero Copy */}
+          {/* Left Column: Portrait Showcase (Clean, No Card/Frame/Box) */}
+          <div className="lg:col-span-5 flex justify-center lg:justify-start items-center">
+            <div className="relative w-full max-w-[300px] sm:max-w-[340px] lg:max-w-[380px] flex items-center justify-center">
+              <img
+                src="/portrait.png"
+                alt="Putri Maharani.S - Professional Portrait"
+                className="w-full h-auto max-h-[480px] object-contain rounded-2xl transition-transform duration-500 hover:scale-[1.01]"
+                loading="eager"
+              />
+            </div>
+          </div>
+
+          {/* Right Column: Introduction Copy */}
           <div className="lg:col-span-7 space-y-6">
             
             {/* Minimalist Cybersecurity Badge */}
@@ -96,57 +108,6 @@ export const Hero: React.FC = () => {
                   </>
                 )}
               </button>
-            </div>
-          </div>
-
-          {/* Professional Portrait Showcase */}
-          <div className="lg:col-span-5 flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-none">
-              
-              {/* Refined Cybersecurity Frame */}
-              <div className="relative rounded-2xl bg-[#141719] border border-[#23272B] p-3 sm:p-3.5 shadow-2xl shadow-black/80 overflow-hidden group">
-                
-                {/* Top Verification Status Bar */}
-                <div className="px-2 pb-2.5 mb-2.5 border-b border-[#23272B] flex items-center justify-between text-xs font-mono">
-                  <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-[#A3E635] animate-pulse" />
-                    <span className="text-[11px] text-[#969DA3] tracking-wider uppercase">IDENTITY_VERIFIED</span>
-                  </div>
-                  <div className="flex items-center gap-1.5 text-[11px] text-[#969DA3]">
-                    <ShieldCheck className="w-3.5 h-3.5 text-[#A3E635]" />
-                    <span className="font-sans text-[11px] text-[#F2F4F3]">Putri Maharani.S</span>
-                  </div>
-                </div>
-
-                {/* Portrait Image Container */}
-                <div className="relative rounded-xl overflow-hidden bg-[#0E1113] border border-[#23272B]/80 aspect-[3/4] max-h-[460px] flex items-center justify-center">
-                  <img
-                    src="/portrait.png"
-                    alt="Putri Maharani.S - Professional Portrait"
-                    className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.02]"
-                    loading="eager"
-                  />
-
-                  {/* Subtle gradient vignette at the bottom */}
-                  <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#0E1113]/95 via-[#0E1113]/50 to-transparent pointer-events-none" />
-
-                  {/* Floating status badge */}
-                  <div className="absolute bottom-3 left-3 right-3 p-2.5 rounded-lg bg-[#141719]/90 backdrop-blur-md border border-[#23272B] flex items-center justify-between font-mono text-[11px]">
-                    <div className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#A3E635]" />
-                      <span className="text-[#F2F4F3] font-medium">SecOps &amp; QA Focus</span>
-                    </div>
-                    <span className="text-[#A3E635] text-[10px] tracking-wider font-semibold">AVAILABLE</span>
-                  </div>
-                </div>
-
-                {/* Bottom Metadata Summary */}
-                <div className="mt-3 pt-2.5 border-t border-[#23272B]/70 flex items-center justify-between text-[11px] font-mono text-[#969DA3] px-1">
-                  <span className="text-[10px] tracking-tight text-[#969DA3]">Makassar, ID · Open to Relocate / Remote</span>
-                  <span className="text-[#A3E635] text-[10px] font-semibold tracking-wider">ENTRY_LEVEL</span>
-                </div>
-
-              </div>
             </div>
           </div>
 
