@@ -123,7 +123,7 @@ export const Hero: React.FC = () => {
                   <img
                     src="/portrait.png"
                     alt="Putri Maharani.S - Professional Portrait"
-                    className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.02]"
+                    className="h-full w-auto max-w-full max-h-full object-contain object-center mx-auto my-auto block transition-transform duration-500 group-hover:scale-[1.02]"
                     loading="eager"
                   />
 
