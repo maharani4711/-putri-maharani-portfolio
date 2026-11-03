@@ -51,7 +51,7 @@ export const portfolioData: PortfolioConfig = {
       id: 'exp-01',
       position: 'Quality Assurance',
       organization: 'Episoden',
-      period: 'January 2026 – July 2026',
+      period: 'December 2025 – July 2026',
       workArrangement: 'Remote',
       responsibilities: [
         'Tested platform user flows, including onboarding, session entry, and matching systems.',
@@ -64,7 +64,7 @@ export const portfolioData: PortfolioConfig = {
       id: 'exp-02',
       position: 'IT Intern',
       organization: 'PT PLN (Persero)',
-      period: 'June 2025 – July 2026',
+      period: 'June 2025 – July 2025',
       location: 'Makassar, Indonesia',
       responsibilities: [
         'Assisted with IT-related activities within the Information Technology Systems (STI) division.',
